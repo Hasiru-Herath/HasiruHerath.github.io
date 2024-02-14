@@ -90,7 +90,7 @@ section {
   padding: 0 9%;
   background: url('DP2.jpg') no-repeat;
   background-size: contain;
-  background-position: right;
+  background-position: initial;
 }
 
 .home-content {
