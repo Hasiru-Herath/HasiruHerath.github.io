@@ -1,6 +1,5 @@
 //toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
@@ -64,3 +63,22 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
+
+// scroll-hide-navbar.js
+
+
+let prevScrollpos = window.scrollY || window.pageYOffset;
+const navbar = document.getElementById("navbar");
+const logo = document.querySelector(".logo");
+
+window.addEventListener("scroll", function () {
+  const currentScrollPos = window.scrollY || window.pageYOffset;
+  if (prevScrollpos > currentScrollPos || currentScrollPos === 0) {
+    navbar.classList.remove("hidden");
+    logo.classList.remove("hidden");
+  } else {
+    navbar.classList.add("hidden");
+    logo.classList.add("hidden");
+  }
+  prevScrollpos = currentScrollPos;
+});

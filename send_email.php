@@ -1,22 +1,28 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Get form data
-  $full_name = $_POST['full_name'];
+  // Retrieve form data
+  $name = $_POST['name'];
   $email = $_POST['email'];
-  $mobile_number = $_POST['mobile_number'];
+  $mobile = $_POST['mobile'];
   $subject = $_POST['subject'];
   $message = $_POST['message'];
 
-  // Set up email
-  $to = "hasiru113@gmail.com";
-  $subject = "New message from your website: $subject";
-  $body = "Full Name: $full_name\nEmail: $email\nMobile Number: $mobile_number\nMessage: $message";
+  // Set up email headers
+  $to = "hasiru113@gmail.com"; // Your email address
+  $subject = "New contact from website: $subject";
+  $headers = "From: $name <$email>";
 
-  // Send email
-  if (mail($to, $subject, $body)) {
-    echo "Message sent successfully!";
+  // Compose the email content
+  $email_content = "Name: $name\n";
+  $email_content .= "Email: $email\n";
+  $email_content .= "Mobile Number: $mobile\n\n";
+  $email_content .= "Message:\n$message\n";
+
+  // Send the email
+  if (mail($to, $subject, $email_content, $headers)) {
+    echo "Your message has been sent successfully.";
   } else {
-    echo "Oops! Something went wrong.";
+    echo "Oops! Something went wrong and we couldn't send your message.";
   }
 }
 ?>

@@ -54,9 +54,19 @@ body {
   font-weight: 600;
 }
 
+.logo.hidden {
+  display: none;
+}
+
 .navbar {
   position: relative;
 }
+
+.navbar.hidden {
+  top: -50px;
+  /* Set this to the height of your navbar */
+}
+
 
 .navbar a {
   font-size: 1.7rem;
