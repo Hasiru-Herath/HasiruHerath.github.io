@@ -42,7 +42,7 @@ window.onscroll = () => {
 
 function makeCall() {
   // Replace 'your-number' with your actual phone number
-  var phoneNumber = '++94775918838';
+  var phoneNumber = '+94769459050';
 
   // Construct the tel URI
   var telURI = 'tel:' + phoneNumber;
