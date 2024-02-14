@@ -88,8 +88,8 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
-
-  background-size: contain;
+  background: url('DP1.jpg') no-repeat;
+  background-size: cover;
   background-position: right;
 }
 
