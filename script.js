@@ -50,3 +50,17 @@ function makeCall() {
   // Open the phone app to make the call
   window.location.href = telURI;
 }
+
+
+
+
+
+window.onscroll = function () {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    navbar.classList.remove("hidden");
+  } else {
+    navbar.classList.add("hidden");
+  }
+  prevScrollpos = currentScrollPos;
+}
