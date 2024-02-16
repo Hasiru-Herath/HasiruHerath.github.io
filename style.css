@@ -104,6 +104,7 @@ section {
 
 .home-content {
   width: auto;
+  height: 250px;
 }
 
 .home-content h1 {
@@ -241,6 +242,9 @@ section {
   z-index: 1;
   overflow: hidden;
   transition: .5s;
+  margin-right: 10px;
+  /* Adjust as needed to control the gap */
+
 }
 
 .home-sci a:hover {
@@ -615,12 +619,12 @@ span {
 
 .footer {
   display: flex;
-  ;
+
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background: var(--second-bg-color);
+  background-color: #081b29;
 }
 
 .footer-text p {
