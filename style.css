@@ -155,15 +155,15 @@ section {
   position: relative;
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
-  ;
 }
 
 .btn-box {
   position: relative;
   display: flex;
   justify-content: space-between;
-  width: 34.5rem;
+  width: 150px;
   height: 5rem;
+  margin-right: 100px;
 
 }
 
@@ -172,7 +172,7 @@ section {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 15rem;
+  width: 150px;
   height: 100%;
   background: var(--main-color);
   border: .2rem solid var(--main-color);
@@ -227,6 +227,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 2rem -2rem 4rem;
 }
 
 .home-sci a {
