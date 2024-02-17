@@ -876,6 +876,19 @@ section:nth-child(odd) .animate.scroll {
 
 }
 
+@media (min-width: 768px) {
+  .home-sci {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .home-sci a {
+    margin-bottom: 0;
+    margin-left: 10px;
+    /* Adjust as needed */
+  }
+}
+
 
 /*KEYFRAMES ANIMATION*/
 @keyframes homeBgText {
